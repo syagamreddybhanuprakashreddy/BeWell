@@ -155,14 +155,7 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid md:grid-cols-2 gap-12 items-center z-10 relative">
           <motion.div style={{ y: textY, opacity: heroOpacity }} className="pt-12 md:pt-0">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2 }}
-              className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/60 backdrop-blur-md border border-[#8a9a86]/20 text-[#2c4c3b] text-sm font-medium mb-10 shadow-sm"
-            >
-              <Sparkles className="w-4 h-4 text-[#c5a975]" /> Cinematic Wellness Experience
-            </motion.div>
+
             
             <h1 className="text-6xl md:text-8xl font-medium tracking-tight mb-8 text-[#1a3b2b] leading-[1.05]">
               <span className="block overflow-hidden"><motion.span className="block" initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}>Better Life</motion.span></span>
