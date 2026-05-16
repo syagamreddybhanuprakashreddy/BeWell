@@ -26,8 +26,12 @@ export default function Navigation() {
   ];
 
   const isHome = pathname === "/";
-  const navColor = isScrolled || !isHome ? "text-bewell-text bg-white/80 backdrop-blur-md border-b border-black/5" : "text-white bg-transparent border-b border-transparent";
-  const logoColor = isScrolled || !isHome ? "text-bewell-green" : "text-white";
+  
+  const navColor = isHome 
+    ? (isScrolled ? "text-white bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5" : "text-white bg-transparent border-b border-transparent")
+    : (isScrolled || !isHome ? "text-bewell-text bg-white/80 backdrop-blur-md border-b border-black/5" : "text-white bg-transparent border-b border-transparent");
+    
+  const logoColor = isHome ? "text-white" : (isScrolled || !isHome ? "text-bewell-green" : "text-white");
 
   return (
     <>
